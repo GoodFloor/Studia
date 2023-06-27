@@ -1,0 +1,38 @@
+// Creating jar file
+jar cvf Star.jar *
+
+// Creating jar file with manifest (it must hold: Main-Class: Star as an entry point)
+jar cfm Star.jar Manifest.txt *.class
+
+
+//Executing
+java -jar Star.jar
+
+
+// Showing files
+jar tf Star.jar
+
+//Extracting
+jar xf Star.jar
+
+//Updating
+jar uf Star.jar Star.class
+
+// Creating jar file with an entry point
+jar cvfe Star.jar  Star *.class
+
+//Executing
+java -jar Star.jar
+
+Parameters:
+
+c-new file
+f-file name
+u-update jar file
+x-extracts
+m-manifest
+v-shows adding files
+
+
+https://docs.oracle.com/javase/7/docs/technotes/tools/windows/jar.html
+https://docs.oracle.com/javase/tutorial/deployment/jar/appman.html

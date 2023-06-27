@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "memory": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "*.tcc": "cpp",
+        "istream": "cpp",
+        "utility": "cpp",
+        "ostream": "cpp"
+    }
+}

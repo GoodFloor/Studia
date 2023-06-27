@@ -1,0 +1,2 @@
+Graf nie jest dwudzielny.
+Czas wykonywania: 0 minut 26.191160 sekund

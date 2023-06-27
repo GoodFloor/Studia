@@ -1,0 +1,17 @@
+;kompilowanie
+nasm -f elf zad1.asm
+ld -m elf_i386 zad1.o -o zad1
+
+
+
+;debugowanie
+de
+gdb ./zad1
+break _start
+set disassembly-flavor intel
+layout asm
+layout regs
+focus cmd
+run
+si - single instruction
+ni - next instruction

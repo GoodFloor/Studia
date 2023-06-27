@@ -1,0 +1,11 @@
+void printBoard(long long hash);
+int findBlank(long long hash);
+bool isSolvable(long long hash);
+long long swapValues(long long hash, int pos1, int pos2);
+long long moveNorth(long long hash);
+long long moveEast(long long hash);
+long long moveSouth(long long hash);
+long long moveWest(long long hash);
+unsigned char heuristic(long long hash);
+unsigned char manhattanHeuristic(long long hash);
+unsigned char inversionHeuristic(long long hash);

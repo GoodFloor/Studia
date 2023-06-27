@@ -1,0 +1,2 @@
+Graf nie zawiera skierowanego cyklu.
+Czas wykonywania: 47 minut 33.922691 sekund
