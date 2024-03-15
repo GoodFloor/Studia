@@ -2,6 +2,7 @@
 *.class
 */bin
 .svn
+.vscode
 SVN
 pwr_sem5_pz
 Inne
