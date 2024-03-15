@@ -1,8 +1,10 @@
 *.~
 *.class
 */bin
+.svn
 SVN
 pwr_sem5_pz
+Inne
 Erasmus
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,linux,visualstudiocode,androidstudio,maven,gradle,c,c++,java,kotlin,python,jupyternotebooks,assembler

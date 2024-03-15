@@ -1,0 +1,89 @@
+﻿//Pobierz dane
+/Input
+/Store number
+Clear
+Add blank
+Store charA
+Store charB
+Store charC
+Store charD
+
+        LOAD        number
+        JNS         tohex
+        HALT
+number,	DEC         123
+
+tohex,	DEC 0
+again,	Store DIVIDEND
+        Clear
+        Store RESULT
+        Load DIVIDEND
+        Subt DIVISOR
+        Add ONE
+		Skipcond 800
+        Jump halt
+            
+/Licz
+loop,	Load DIVIDEND
+		Subt DIVISOR
+		Store DIVIDEND
+		Load RESULT
+		Add ONE
+		Store RESULT
+        Load DIVIDEND
+		Subt DIVISOR
+		Skipcond 800
+		Jump endloop
+        Jump loop
+
+/Zakończenie dzielenia
+endloop,	Load DIVIDEND
+			Subt NINE
+			Skipcond 000
+            Add TRANSPL
+            Add TRANSPN
+            Store DIVIDEND
+			Load charC
+			Store charD
+			Load charB
+			Store charC
+			Load charA
+			Store charB
+			Load DIVIDEND
+			Store charA
+            Load RESULT
+			Jump again
+
+/Zakonczenie dzialania
+halt, 	Load DIVIDEND
+        Subt NINE
+		Skipcond 000
+        Add TRANSPL
+        Add TRANSPN
+		Output
+        Load charA
+		Output
+		Load charB
+		Output
+		Load charC
+		Output
+		Load charD
+		Output
+        Load LF
+		Output
+		JumpI tohex 
+
+/Zmienne
+DIVIDEND, DEC 0
+DIVISOR, DEC 16
+RESULT, DEC 0
+ONE, DEC 1
+TRANSPN, DEC 57
+TRANSPL, DEC 7
+NINE, DEC 9
+charA, DEC 0
+charB, DEC 0
+charC, DEC 0
+charD, DEC 0
+blank, DEC 32
+LF, DEC 10
