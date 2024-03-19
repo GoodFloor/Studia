@@ -1,0 +1,2 @@
+|V|	waga MST	avg(|pi|)	avg(iter)	pi_min
+131	474	594.917	28.8333	589
