@@ -1,0 +1,9 @@
+1
+-2
+-4
+-5
+--3
+--6
+--8
+---7
+Czas wykonywania: 0 minut 0.000124 sekund

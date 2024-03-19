@@ -1,0 +1,29 @@
+./zad1 dane/test_D.txt b > test_D_BFS.txt;
+./zad1 dane/test_D.txt b t > test_D_BFS_TREE.txt;
+./zad1 dane/test_D.txt d t > test_D_DFS_TREE.txt;
+./zad1 dane/test_D.txt d > test_D_DFS.txt;
+
+./zad1 dane/test_U.txt b > test_U_BFS.txt;
+./zad1 dane/test_U.txt b t > test_U_BFS_TREE.txt;
+./zad1 dane/test_U.txt d t > test_U_DFS_TREE.txt;
+./zad1 dane/test_U.txt d > test_U_DFS.txt;
+
+./zad1 dane/zad_1a_D.txt b > zad_1a_D_BFS.txt;
+./zad1 dane/zad_1a_D.txt b t > zad_1a_D_BFS_TREE.txt;
+./zad1 dane/zad_1a_D.txt d t > zad_1a_D_DFS_TREE.txt;
+./zad1 dane/zad_1a_D.txt d > zad_1a_D_DFS.txt;
+
+./zad1 dane/zad_1a_U.txt b > zad_1a_U_BFS.txt;
+./zad1 dane/zad_1a_U.txt b t > zad_1a_U_BFS_TREE.txt;
+./zad1 dane/zad_1a_U.txt d t > zad_1a_U_DFS_TREE.txt;
+./zad1 dane/zad_1a_U.txt d > zad_1a_U_DFS.txt;
+
+./zad1 dane/zad_1b_D.txt b > zad_1b_D_BFS.txt;
+./zad1 dane/zad_1b_D.txt b t > zad_1b_D_BFS_TREE.txt;
+./zad1 dane/zad_1b_D.txt d t > zad_1b_D_DFS_TREE.txt;
+./zad1 dane/zad_1b_D.txt d > zad_1b_D_DFS.txt;
+
+./zad1 dane/zad_1b_U.txt b > zad_1b_U_BFS.txt;
+./zad1 dane/zad_1b_U.txt b t > zad_1b_U_BFS_TREE.txt;
+./zad1 dane/zad_1b_U.txt d t > zad_1b_U_DFS_TREE.txt;
+./zad1 dane/zad_1b_U.txt d > zad_1b_U_DFS.txt;

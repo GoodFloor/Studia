@@ -1,0 +1,12 @@
+Silnie spójna składowa 1:
+	Liczba wierzchołków: 8
+Silnie spójna składowa 2:
+	Liczba wierzchołków: 4000
+Silnie spójna składowa 3:
+	Liczba wierzchołków: 3600
+Silnie spójna składowa 4:
+	Liczba wierzchołków: 2400
+Silnie spójna składowa 5:
+	Liczba wierzchołków: 1
+Liczba silnie spójnych składowych: 5
+Czas wykonywania: 0 minut 0.233124 sekund
