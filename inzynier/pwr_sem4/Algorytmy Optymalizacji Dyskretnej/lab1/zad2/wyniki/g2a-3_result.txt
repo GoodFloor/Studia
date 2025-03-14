@@ -1,0 +1,2 @@
+Graf nie zawiera skierowanego cyklu.
+Czas wykonywania: 0 minut 0.007723 sekund

@@ -1,1 +1,0 @@
-Program był testowany na systemie operacyjnym Ubuntu

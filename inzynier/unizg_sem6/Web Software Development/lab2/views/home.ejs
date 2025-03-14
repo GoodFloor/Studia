@@ -1,0 +1,30 @@
+<%- include(`partials/_head`); %>
+<%- include(`partials/_header`); %>
+
+<aside>
+    <div>
+        <nav>
+            <ul id="menuCategories">
+                <% locals.categoriesList.forEach(element => { %>
+                    <li><a href="/getProducts/<%= element.id %>"><%= element.name %></a></li>
+                <% }); %>
+            </ul>
+        </nav>
+        <div class="links">
+            <a href="">Contact</a>
+            <a href="">Subscribe to newsletter</a>
+        </div>
+    </div>
+</aside>
+<main>
+    <div class="banner">
+        <h2>Welcome to my shop!</h2>
+        <img src="/images/banner.jpg" alt="Banner">
+    </div>
+    <div class="welcomeMsg">
+        <h3>Welcome to my animal shop!</h3>
+        <p>Just pick one of categories on the left and invite a new animal into your home!</p>
+    </div>
+</main>
+
+<%- include(`partials/_footer`); %>

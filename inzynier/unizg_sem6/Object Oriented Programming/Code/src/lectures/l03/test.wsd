@@ -1,0 +1,14 @@
+@startuml Test
+scale 2
+left to right direction
+skinparam PackageStyle rect
+actor Customer
+actor Clerk as C
+rectangle Checkout {
+    (Register) -- (Checkout)
+    (Checkout) -- [Web]
+    C -- (Checkout)
+    (Checkout) <. Customer
+}
+
+@enduml

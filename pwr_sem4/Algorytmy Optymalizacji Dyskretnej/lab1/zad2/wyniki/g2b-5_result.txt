@@ -1,2 +1,0 @@
-Graf zawiera skierowany cykl.
-Czas wykonywania: 1 minut 9.978298 sekund

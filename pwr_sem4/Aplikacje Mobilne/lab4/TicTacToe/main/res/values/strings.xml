@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Tic tac toe</string>
-    <string name="pick_size">Wybierz rozmiar planszy:</string>
-    <string name="start">Start</string>
-    <string name="title_activity_game">GameActivity</string>
-</resources>

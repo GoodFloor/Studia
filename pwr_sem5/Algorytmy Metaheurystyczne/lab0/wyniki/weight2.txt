@@ -1,2 +1,0 @@
-|V|	waga MST	waga DFS	avg(min10)	avg(min50)	avg(min1000)
-343	1179	1795	33033.9	33000.6	32542

@@ -1,0 +1,2 @@
+|V|	średnia waga	minimalna waga
+1483	152158	147299

@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="UTF-8">
+  <link href="res/prism.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+    code {
+      font-size: 16px;
+      font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    }
+  </style>
+</head>
+<body>
+<h1>Task Description</h1>
+<p>You are tasked with helping a company innovation manager with handling an innovation competition. The ranking of employees in the competition is carried out based on the number of innovation proposals and implemented innovations.</p>
+<p>Your task is to write two classes: <code>Employee</code> and <code>InnovationCompetition</code>. The classes should be in the <code>hr.fer.oop</code> package and have visibility set to <em>public</em>.</p>
+<p>It is necessary to implement the methods in the classes as shown in the class diagram. You are free to add and implement additional methods, attributes and constructors.</p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="450px" preserveAspectRatio="none" style="width:798px;height:450px;background:#FFFFFF;" version="1.1" viewBox="0 0 798 450" width="798px" zoomAndPan="magnify">
+<defs/>
+<g>
+<!--MD5=[7421f545a0d8420c5bec41e74b387d9c]
+class Employee-->
+<g id="elem_Employee">
+<rect codeLine="2" fill="#F1F1F1" height="245.8594" id="Employee" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="721" x="38.5" y="7"/>
+<ellipse cx="361.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+<path d="M364.2231,29.1431 Q363.6421,29.4419 363.0029,29.5913 Q362.3638,29.7407 361.6582,29.7407 Q359.1514,29.7407 357.8315,28.0889 Q356.5117,26.437 356.5117,23.3159 Q356.5117,20.1865 357.8315,18.5347 Q359.1514,16.8828 361.6582,16.8828 Q362.3638,16.8828 363.0112,17.0322 Q363.6587,17.1816 364.2231,17.4805 L364.2231,20.2031 Q363.5923,19.6221 362.9988,19.3523 Q362.4053,19.0825 361.7744,19.0825 Q360.4297,19.0825 359.7449,20.1492 Q359.0601,21.2158 359.0601,23.3159 Q359.0601,25.4077 359.7449,26.4744 Q360.4297,27.541 361.7744,27.541 Q362.4053,27.541 362.9988,27.2712 Q363.5923,27.0015 364.2231,26.4204 Z " fill="#000000"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="382.25" y="28.291">Employee</text>
+<line style="stroke:#181818;stroke-width:0.5;" x1="39.5" x2="758.5" y1="39" y2="39"/>
+<rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="46.5" y="49.7441"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="58.5" y="56.5352">firstName: String</text>
+<rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="46.5" y="66.2324"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="58.5" y="73.0234">lastName: String</text>
+<rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="46.5" y="82.7207"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="58.5" y="89.5117">proposedInnovations: int</text>
+<rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="46.5" y="99.209"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="58.5" y="106">implementedInnovations: int</text>
+<line style="stroke:#181818;stroke-width:0.5;" x1="39.5" x2="758.5" y1="112.9531" y2="112.9531"/>
+<ellipse cx="49.5" cy="126.6973" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="695" x="58.5" y="130.4883">Employee(firstName: String, lastName: String, proposedInnovations: int, implementedInnovations: int)</text>
+<ellipse cx="49.5" cy="143.1855" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="58.5" y="146.9766">getFirstName(): String</text>
+<ellipse cx="49.5" cy="159.6738" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="58.5" y="163.4648">getLastName(): String</text>
+<ellipse cx="49.5" cy="176.1621" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="58.5" y="179.9531">getProposedInnovations(): int</text>
+<ellipse cx="49.5" cy="192.6504" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="228" x="58.5" y="196.4414">getImplementedInnovations(): int</text>
+<ellipse cx="49.5" cy="209.1387" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="58.5" y="212.9297">toString(): String</text>
+<ellipse cx="49.5" cy="225.627" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="58.5" y="229.418">equals(o: Object): boolean</text>
+<ellipse cx="49.5" cy="242.1152" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="58.5" y="245.9063">hashCode(Object o): int</text>
+</g>
+<!--MD5=[12f3c66b3c65bd67ca626a35cb630e73]
+class InnovationCompetition-->
+<g id="elem_InnovationCompetition">
+<rect codeLine="17" fill="#F1F1F1" height="130.4414" id="InnovationCompetition" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="784" x="7" y="312.86"/>
+<ellipse cx="315.75" cy="328.86" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+<path d="M318.2231,335.0031 Q317.6421,335.3019 317.0029,335.4513 Q316.3638,335.6007 315.6582,335.6007 Q313.1514,335.6007 311.8315,333.9489 Q310.5117,332.297 310.5117,329.1759 Q310.5117,326.0465 311.8315,324.3947 Q313.1514,322.7428 315.6582,322.7428 Q316.3638,322.7428 317.0112,322.8922 Q317.6587,323.0416 318.2231,323.3405 L318.2231,326.0631 Q317.5923,325.4821 316.9988,325.2123 Q316.4053,324.9425 315.7744,324.9425 Q314.4297,324.9425 313.7449,326.0092 Q313.0601,327.0758 313.0601,329.1759 Q313.0601,331.2677 313.7449,332.3344 Q314.4297,333.401 315.7744,333.401 Q316.4053,333.401 316.9988,333.1312 Q317.5923,332.8615 318.2231,332.2804 Z " fill="#000000"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="336.25" y="334.151">InnovationCompetition</text>
+<line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="790" y1="344.86" y2="344.86"/>
+<rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="355.6041"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="27" y="362.3952">employees: List&lt;Employee&gt;</text>
+<line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="790" y1="369.3483" y2="369.3483"/>
+<ellipse cx="18" cy="383.0924" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="758" x="27" y="386.8834">addEmployee(firstName: String, lastName: String, proposedInnovations: int, implementedInnovations: int): void</text>
+<ellipse cx="18" cy="399.5807" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="27" y="403.3717">getEmployees(): List&lt;Employee&gt;</text>
+<ellipse cx="18" cy="416.069" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="366" x="27" y="419.86">removeEmployees(removalNames: List&lt;String&gt;): void</text>
+<ellipse cx="18" cy="432.5573" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="27" y="436.3483">rankEmployees(): void</text>
+</g>
+<!--MD5=[39d8ea52aa15638969991128884ab1af]
+link Employee to InnovationCompetition-->
+<!--MD5=[8ba624387a53f800c4e0c942677dd58d]
+@startuml
+
+class Employee {
+- firstName: String
+- lastName: String
+- proposedInnovations: int
+- implementedInnovations: int
++ Employee(firstName: String, lastName: String, proposedInnovations: int, implementedInnovations: int)
++ getFirstName(): String
++ getLastName(): String
++ getProposedInnovations(): int
++ getImplementedInnovations(): int
++ toString(): String
++ equals(o: Object): boolean
++ hashCode(Object o): int
+}
+
+class InnovationCompetition {
+- employees: List<Employee>
++ addEmployee(firstName: String, lastName: String, proposedInnovations: int, implementedInnovations: int): void
++ getEmployees(): List<Employee>
++ removeEmployees(removalNames: List<String>): void
++ rankEmployees(): void
+} 
+
+Employee -[hidden]down- InnovationCompetition
+
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 20:12:26 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: HR
+-->
+</g>
+</svg>
+<p>Visibility legend in the class diagram:</p>
+<p><img src="res/vidljivost.png" alt="Visibility legend" /></p>
+<p>You must prepare the <code>Employee</code> class to work with collections by overriding the <code>equals</code> and <code>hashCode</code> methods.</p>
+<p>The <code>equals</code> method returns that two employees are equal if they have the same first and last name. Likewise, the <code>hashCode</code> method will return the same hash for two employees who have the same first and last name.</p>
+<p>You also need to rearrange the <code>toString</code> method to match the output shown in the example.</p>
+<p>The <code>addEmployee</code> method in the <code>InnovationCompetition</code> class enables adding of an employee in the company's innovation competition. Employees can be removed from the competition using the <code>removeEmployees</code> method which has as a parameter the list of last names of employees that we want to exempt.</p>
+<p>In order to rank the existing list of employees in the competition by the <code>rankEmployees</code> method, it is necessary to write a class that implements the <code>Comparator</code> interface and compares two employess first by the <strong>implementedInnovations</strong> attribute (higher goes first), then by the <strong>proposedInnovations</strong> attribute (higher goes first) and finally by last name (alphabetical).</p>
+<h4>Usage example:</h4>
+<pre class="line-numbers"><code class="language-java">InnovationCompetition competition = new InnovationCompetition();
+competition.addEmployee(&quot;Ana&quot;, &quot;Horvat&quot;, 10, 5);
+competition.addEmployee(&quot;Ivan&quot;, &quot;Car&quot;, 7, 4);
+competition.addEmployee(&quot;Ema&quot;, &quot;Kolar&quot;, 3, 3);
+competition.addEmployee(&quot;Luka&quot;, &quot;Medak&quot;, 5, 2);
+competition.addEmployee(&quot;Petra&quot;, &quot;Herceg&quot;, 8, 3);
+competition.addEmployee(&quot;Fran&quot;, &quot;Pehar&quot;, 5, 4);
+competition.addEmployee(&quot;Lea&quot;, &quot;Kralj&quot;, 7, 4);
+competition.addEmployee(&quot;Jakov&quot;, &quot;Vincek&quot;, 6, 3);
+competition.addEmployee(&quot;Nika&quot;, &quot;Novosel&quot;, 9, 2);
+competition.addEmployee(&quot;Lovre&quot;, &quot;Razum&quot;, 1, 1);
+competition.addEmployee(&quot;Lana&quot;, &quot;Kos&quot;, 5, 3);
+competition.addEmployee(&quot;Borna&quot;, &quot;Rukavina&quot;, 7, 4);
+competition.addEmployee(&quot;Nina&quot;, &quot;Posavec&quot;, 5, 3);
+competition.addEmployee(&quot;Filip&quot;, &quot;Krolo&quot;, 8, 2);
+competition.addEmployee(&quot;Matea&quot;, &quot;Poljak&quot;, 2, 1);
+competition.addEmployee(&quot;Marko&quot;, &quot;Vitez&quot;, 7, 5);
+    
+competition.removeEmployees(List.of(&quot;Poljak&quot;, &quot;Novosel&quot;, &quot;Herceg&quot;));
+competition.rankEmployees();
+
+System.out.println(&quot;Final ranking list: &quot;);
+for (Employee employee : competition.getEmployees()) {
+    System.out.println(employee.toString());
+}
+</code></pre>
+<h4>Expected output:</h4>
+<pre class="line-numbers"><code class="language-text">Final ranking list: 
+Ana Horvat [proposed: 10, implemented: 5]
+Marko Vitez [proposed: 7, implemented: 5]
+Ivan Car [proposed: 7, implemented: 4]
+Lea Kralj [proposed: 7, implemented: 4]
+Borna Rukavina [proposed: 7, implemented: 4]
+Fran Pehar [proposed: 5, implemented: 4]
+Jakov Vincek [proposed: 6, implemented: 3]
+Lana Kos [proposed: 5, implemented: 3]
+Nina Posavec [proposed: 5, implemented: 3]
+Ema Kolar [proposed: 3, implemented: 3]
+Filip Krolo [proposed: 8, implemented: 2]
+Luka Medak [proposed: 5, implemented: 2]
+Lovre Razum [proposed: 1, implemented: 1]
+</code></pre>
+  <script src="res/prism.js"></script>
+</body>
+</html>

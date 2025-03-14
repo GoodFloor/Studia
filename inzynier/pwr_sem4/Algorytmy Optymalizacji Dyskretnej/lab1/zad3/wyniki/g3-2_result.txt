@@ -1,0 +1,119 @@
+Silnie spójna składowa 1:
+	6
+	5
+	4
+	3
+	2
+	1
+	Liczba wierzchołków: 6
+Silnie spójna składowa 2:
+	67
+	106
+	105
+	104
+	103
+	102
+	101
+	100
+	99
+	98
+	97
+	96
+	95
+	94
+	93
+	92
+	91
+	90
+	89
+	88
+	87
+	86
+	85
+	84
+	83
+	82
+	81
+	80
+	79
+	78
+	77
+	76
+	75
+	74
+	73
+	72
+	71
+	70
+	69
+	68
+	Liczba wierzchołków: 40
+Silnie spójna składowa 3:
+	7
+	13
+	19
+	25
+	31
+	37
+	38
+	39
+	40
+	41
+	42
+	36
+	30
+	24
+	18
+	12
+	11
+	10
+	9
+	8
+	17
+	16
+	15
+	14
+	20
+	26
+	32
+	33
+	34
+	35
+	29
+	23
+	22
+	21
+	27
+	28
+	Liczba wierzchołków: 36
+Silnie spójna składowa 4:
+	43
+	44
+	45
+	46
+	47
+	48
+	49
+	50
+	51
+	52
+	53
+	54
+	55
+	56
+	57
+	58
+	59
+	60
+	61
+	62
+	63
+	64
+	65
+	66
+	Liczba wierzchołków: 24
+Silnie spójna składowa 5:
+	107
+	Liczba wierzchołków: 1
+Liczba silnie spójnych składowych: 5
+Czas wykonywania: 0 minut 0.001274 sekund

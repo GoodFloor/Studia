@@ -1,0 +1,12 @@
+Graf jest dwudzielny.
+V0 	| V1
+1	| 2
+3	| 4
+6	| 5
+8	| 7
+9	| 10
+11	| 12
+14	| 13
+16	| 15
+	| 
+Czas wykonywania: 0 minut 0.000039 sekund

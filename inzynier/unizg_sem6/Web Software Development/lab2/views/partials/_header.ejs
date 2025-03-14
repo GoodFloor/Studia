@@ -1,0 +1,15 @@
+<header>
+    <figure class="logo">
+        <a href="/"><img id="logotype" alt="logotype" src="/images/logotype.png"></a>
+    </figure>
+    <h1 id="currentCategoryName"><%= locals.currentCategoryName || "Category" %></h1>
+    <div class="toolbox">
+        <figure class="cart">
+            <a href="/cart/getAll"><img src="/images/cart.png" alt="Cart"></a>
+            <div id="cartCounter"><%= locals.cartCounter || "0" %></div>
+        </figure>
+        <figure class="search">
+            <a href=""><img src="/images/loupe.png" alt="Search"></a> 
+        </figure>
+    </div>
+</header>

@@ -1,0 +1,69 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-basis: 100%;
+    background-color: #253659;
+    color: #f27457;
+}
+header .logo {
+    flex-basis: 20%;
+    text-align: center;
+}
+header .logo img {
+    width: 40%;
+}
+header h1 {
+    flex-basis: 60%;
+    padding: 1em;
+}
+
+header .toolbox {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .toolbox figure {
+    flex-basis: 20%;
+    text-align: center;
+}
+header .toolbox .cart {
+    position: relative;
+}
+header .toolbox .cart img {
+    width: 75%;
+}
+header .toolbox #cartCounter {
+    position: absolute;
+    left: 90%;
+    top: 50%;
+}
+header .toolbox .hidden {
+    display: none;
+}
+header .toolbox .search img {
+    width: 60%;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+    }
+    header .logo {
+        order: 1;
+        flex-basis: 50%;
+    }
+    header h1 {
+        order: 3;
+        flex-basis: 100%;
+        text-align: center;
+        border-top: 1px solid #04bf9d;
+        padding: 0.25em;
+    }
+    header .toolbox {
+        order: 2;
+        flex-basis: 50%;
+    }
+}

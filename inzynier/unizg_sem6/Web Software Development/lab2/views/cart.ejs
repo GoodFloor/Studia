@@ -1,0 +1,28 @@
+<%- include(`partials/_head`); %>
+<%- include(`partials/_header`); %>
+
+<main class="displayCart">
+    <div class="banner">
+        <h2>Welcome to my shop!</h2>
+        <img src="/images/banner.jpg" alt="Banner">
+    </div>
+    <div id="cartProductsList">
+        <% if (locals.cart.length > 0) { %>
+            <div class="cartContent">
+                <p class="productName header">Product name</p>
+                <p class="amountHeader header">Amount</p>
+
+                <% locals.cart.forEach(element => { %>
+                    <p class="productName"><%= element.name %></p>
+                    <a href="remove/<%= element.id %>" class="decrease button">-</a>
+                    <p class="amount"><%= element.amount %></p>
+                    <a href="add/<%= element.id %>" class="increase button">+</a>
+                <% }); %>
+            </div>
+        <% } else { %>
+            <h3 class="emptyCartMsg">Your cart is empty!</h3>
+        <% } %>
+    </div>
+</main>
+
+<%- include(`partials/_footer`); %>

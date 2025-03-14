@@ -1,0 +1,12 @@
+q0,q1,q2,pp
+a,b
+K,X,Y
+q0
+K
+pp
+q0,a,K->q1,XK
+q1,a,X->q1,YX
+q1,b,Y->q2,Y
+q2,$,Y->pp,XY
+
+aab

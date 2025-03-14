@@ -1,0 +1,60 @@
+main.displayCart {
+    flex-basis: 100%;
+    background-color: #253659;
+}
+main.displayCart #cartProductsList {
+    min-height: 50vh;
+    text-align: center;
+    color: #f27457;
+    font-size: 300%;
+    width: 80%;
+    margin: 1em auto;
+}
+#cartProductsList .cartContent {
+    display: grid;
+    grid-template-columns: 70% auto 15% auto;
+    row-gap: 0.1em;
+    background-color: #03a696;
+    font-size: 60%;
+}
+#cartProductsList .cartContent .header {
+    font-size: 125%;
+}
+#cartProductsList .amountHeader {
+    grid-column: 2 / span 3;
+    padding: 0.2em 1vw;
+}
+#cartProductsList .productName {
+    text-align: left;
+    padding: 0.2em 1vw;
+}
+#cartProductsList .button {
+    color: #f27457;
+    line-height: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #03a696;
+    border: none;
+    transition-duration: 0.5s;
+}
+#cartProductsList .button:hover {
+    background-color: #04bf9d;
+}
+#cartProductsList .increase {
+    border-left: 1px solid #253659;
+}
+#cartProductsList .decrease {
+    border-right: 1px solid #253659;
+}
+#cartProductsList .amount {
+    padding: 0.25em 0em;
+}
+
+@media screen and (max-width: 1024px) {
+    .displayCart .banner h2 {
+        font-size: 75%;
+    }
+    main.displayCart #cartProductsList {
+        font-size: 150%;
+    }
+}

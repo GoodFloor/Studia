@@ -1,0 +1,10 @@
+12 Czech Republic
+10 Croatia
+ 8 Switzerland
+ 7 France
+ 6 Germany
+ 5 Sweden
+ 4 Spain
+ 3 Portugal
+ 2 Italy
+ 1 Malta

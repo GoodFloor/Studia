@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="UTF-8">
+  <link href="res/prism.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+    code {
+      font-size: 16px;
+      font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    }
+  </style>
+</head>
+<body>
+<p>The task requires completing the <code>Lambdas</code> class by implementing three static attributes as shown in the class diagram. The static attribute <code>loadFromStream</code> is of type <code>BiConsumer</code>, and its <code>accept</code> method is used for loading data from a CSV (comma separated values) file into a map. The remaining two static attributes are of type <code>BiFunction</code>, and their <code>apply</code> methods utilize the map with loaded data for calculating statistics.</p>
+<p><strong>Notes:</strong> Each of these three static attributes should be implemented as <strong>lambda expressions</strong> using the Java Stream API (i.e., collection streams). There is no need to catch or handle exceptions during the implementation. The <code>Lambdas</code> class should be located in the package <code>hr.fer.oop.stats</code>, and both the class and its static attributes should have their visibility set to <em>public</em>.</p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="118px" preserveAspectRatio="none" style="width:909px;height:118px;background:#FFFFFF;" version="1.1" viewBox="0 0 909 118" width="909px" zoomAndPan="magnify">
+<defs/>
+<g>
+<!--MD5=[8369d970a6ce36dade6897222e2ae942]
+class Lambdas-->
+<g id="elem_Lambdas">
+<rect codeLine="1" fill="#F1F1F1" height="97.4648" id="Lambdas" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="888" x="7" y="7"/>
+<ellipse cx="416.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+<path d="M418.7231,29.1431 Q418.1421,29.4419 417.5029,29.5913 Q416.8638,29.7407 416.1582,29.7407 Q413.6514,29.7407 412.3315,28.0889 Q411.0117,26.437 411.0117,23.3159 Q411.0117,20.1865 412.3315,18.5347 Q413.6514,16.8828 416.1582,16.8828 Q416.8638,16.8828 417.5112,17.0322 Q418.1587,17.1816 418.7231,17.4805 L418.7231,20.2031 Q418.0923,19.6221 417.4988,19.3523 Q416.9053,19.0825 416.2744,19.0825 Q414.9297,19.0825 414.2449,20.1492 Q413.5601,21.2158 413.5601,23.3159 Q413.5601,25.4077 414.2449,26.4744 Q414.9297,27.541 416.2744,27.541 Q416.9053,27.541 417.4988,27.2712 Q418.0923,27.0015 418.7231,26.4204 Z " fill="#000000"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="436.75" y="28.291">Lambdas</text>
+<line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="894" y1="39" y2="39"/>
+<ellipse cx="18" cy="52.7441" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="689" x="27" y="56.5352">loadFromStream : BiConsumer&lt;Stream&lt;String&gt;, Map&lt;String, Collection&lt;Entry&lt;Integer, Long&gt;&gt;&gt;&gt;</text>
+<ellipse cx="18" cy="69.2324" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="862" x="27" y="73.0234">getValuesForYear : BiFunction&lt;Map&lt;String, Collection&lt;Entry&lt;Integer, Long&gt;&gt;&gt;, Integer, Collection&lt;Entry&lt;String, Long&gt;&gt;&gt;</text>
+<ellipse cx="18" cy="85.7207" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+<text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="775" x="27" y="89.5117">getMinForCountry : BiFunction&lt;Map&lt;String, Collection&lt;Entry&lt;Integer, Long&gt;&gt;&gt;, String, Entry&lt;Integer, Long&gt;&gt;</text>
+<line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="894" y1="96.4648" y2="96.4648"/>
+</g>
+<!--MD5=[4b15bbacf967a033bdd69cfa84d8f30b]
+@startuml
+class "Lambdas" {
+{static}  +  loadFromStream : BiConsumer<Stream<String>, Map<String, Collection<Entry<Integer, Long>>>>
+{static}  +  getValuesForYear : BiFunction<Map<String, Collection<Entry<Integer, Long>>>, Integer, Collection<Entry<String, Long>>>
+{static}  +  getMinForCountry : BiFunction<Map<String, Collection<Entry<Integer, Long>>>, String, Entry<Integer, Long>>
+}
+
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 20:12:26 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: HR
+-->
+</g>
+</svg>
+<p>Access modifiers in class diagrams:</p>
+<p><img src="res/vidljivost.png" alt="Legenda vidljivosti" /></p>
+<p>Example CSV file containing the data to be loaded:</p>
+<pre class="line-numbers"><code class="language-csv">Austria,2016,14263780
+Austria,2017,14936336
+Austria,2018,16530441
+Belgium,2016,12550821
+Belgium,2017,11961089
+Belgium,2018,11916735
+</code></pre>
+<p>Each row of this CSV file contains the following three values:</p>
+<ul>
+<li><code>Country</code> - the name of the country to which the value refers,</li>
+<li><code>Year</code> - the year to which the value refers, and</li>
+<li><code>Value</code> - the value representing the number of mobile subscribers in that country and year.</li>
+</ul>
+<p><strong>Notes:</strong> In the CSV file, there may be data for countries and years that are not displayed in the example CSV file, but there cannot be missing values such that data for a country is missing for a certain year.</p>
+<p>The data from this CSV file is loaded using the <code>accept</code> method of the static attribute <code>loadFromStream</code>, which is of type <code>BiConsumer</code>. This method takes two arguments. The <code>lines</code> argument of type <code>Stream&lt;String&gt;</code> represents the collection stream of lines from this CSV file. The <code>map</code> argument of type <code>Map&lt;String, Collection&lt;Entry&lt;Integer, Long&gt;&gt;&gt;</code> represents the map in which the data needs to be loaded from the file. The keys in this map are of type <code>String</code> and represent the country names. The values are collections of objects of type <code>Entry&lt;Integer, Long&gt;</code> (i.e., key-value pairs) with the key of type <code>Integer</code> representing the year and the value of type <code>Long</code> representing the number of mobile subscribers in that country and year. <code>Entry</code> is an interface, so you can create objects of this type using the constructor of the <code>java.util.AbstractMap.SimpleEntry</code> class, which implements this interface. Implement the static attribute <code>loadFromStream</code> as a lambda expression using the Java Stream API (i.e., streams) and the default <code>compute</code> method from the <code>java.util.Map</code> interface.</p>
+<p>The <code>apply</code> method of the static attribute <code>getMinForCountry</code>, which is of type <code>BiFunction</code>, takes two arguments. The <code>map</code> argument of type <code>Map&lt;String, Collection&lt;Entry&lt;Integer, Long&gt;&gt;&gt;</code> is the map containing the data loaded by the <code>accept</code> method of the static attribute <code>loadFromStream</code>. The <code>country</code> argument of type <code>String</code> represents the country name for which you need to find the minimum number of mobile subscribers and the year in which it occurred. The result (year and minimum number of subscribers) should be returned as an object of type <code>Entry&lt;Integer, Long&gt;</code> with the key of type <code>Integer</code> representing the year and the value of type <code>Long</code> representing the number of mobile subscribers. During implementation, you can use the terminal operation <code>Optional&lt;T&gt; findFirst()</code>, which retrieves the first element of the collection stream.</p>
+<p>The <code>apply</code> method of the static attribute <code>getValuesForYear</code>, which is of type <code>BiFunction</code>, takes two arguments. The <code>map</code> argument of type <code>Map&lt;String, Collection&lt;Entry&lt;Integer, Long&gt;&gt;&gt;</code> is the map containing the data loaded by the <code>accept</code> method of the static attribute <code>loadFromStream</code>. The <code>year</code> argument of type <code>int</code> represents the year for which you need to find the number of mobile subscribers for each country for which there is data. The result is a collection of objects of type <code>Entry&lt;String, Long&gt;</code> with the key of type <code>String</code> representing the country name and the value of type <code>Long</code> representing the number of mobile subscribers.</p>
+<p>Example usage of the <code>Lambdas</code> class and the static attributes that need to be implemented:</p>
+<pre class="line-numbers"><code class="language-java">Map&lt;String, Collection&lt;Entry&lt;Integer, Long&gt;&gt;&gt; map = new HashMap&lt;&gt;();
+
+//just to correctly find the project dir
+String startDir = System.getProperty(&quot;project.dir&quot;);
+if (startDir == null) {
+    startDir = System.getProperty(&quot;user.dir&quot;);
+}
+
+try {
+    Path path = Path.of(startDir, &quot;src&quot;, &quot;main&quot;, &quot;resources&quot;, &quot;MSUBS_small.csv&quot;);
+    Lambdas.loadFromStream.accept(Files.lines(path), map);
+    System.out.println(&quot;Loaded map: &quot; + map);
+    System.out.println(&quot;Min for Belgium: &quot; + Lambdas.getMinForCountry.apply(map, &quot;Belgium&quot;));
+    System.out.println(&quot;Values for 2017: &quot; + Lambdas.getValuesForYear.apply(map, 2017));
+ } catch (IOException ex) {
+    System.out.println(&quot;The path does not exist: &quot; + ex);
+ }
+</code></pre>
+<p>Expected output:</p>
+<pre class="line-numbers"><code class="language-txt">Loaded map: {Austria=[2016=14263780, 2017=14936336, 2018=16530441], Belgium=[2016=12550821, 2017=11961089, 2018=11916735]}
+Min for Belgium: 2018=11916735
+Values for 2017: [Austria=14936336, Belgium=11961089]
+</code></pre>
+  <script src="res/prism.js"></script>
+</body>
+</html>

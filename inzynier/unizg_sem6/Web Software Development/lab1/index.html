@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal shop</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/data.js"></script>
+    <script src="scripts/cartHandler.js"></script>
+    <script src="scripts/cartCounter.js"></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <figure class="logo">
+                <img id="logotype" alt="logotype" src="images/logotype.png">
+            </figure>
+            <h1 id="currentCategoryName">Category</h1>
+            <div class="toolbox">
+                <figure class="cart">
+                    <a href="cart.html"><img src="images/cart.png" alt="Cart"></a>
+                    <div id="cartCounter">0</div>
+                </figure>
+                <figure class="search">
+                    <a href=""><img src="images/loupe.png" alt="Search"></a> 
+                </figure>
+            </div>
+        </header>
+        <aside>
+            <div>
+                <nav>
+                    <ul id="menuCategories"></ul>
+                </nav>
+                <div class="links">
+                    <a href="">Contact</a>
+                    <a href="">Subscribe to newsletter</a>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="banner">
+                <h2>Welcome to my shop!</h2>
+                <img src="images/banner.jpg" alt="Banner">
+            </div>
+            <div id="productsList">
+                No products in this category yet!
+            </div>
+        </main>
+    </div>
+</body>
+</html>

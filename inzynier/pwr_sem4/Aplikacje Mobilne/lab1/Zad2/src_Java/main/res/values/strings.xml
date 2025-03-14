@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Zad2_Java</string>
+    <string name="paper">Papier</string>
+    <string name="rock">Kamień</string>
+    <string name="scissors">Nożyce</string>
+
+</resources>

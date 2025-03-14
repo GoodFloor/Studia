@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Kalendarz</string>
-    <string name="new_activity">+ Dodaj wydarzenie</string>
-    <string name="new_activity_name_placeholder">Nazwa</string>
-    <string name="new_activity_create">Zapisz</string>
-    <string name="new_activity_name_hint">Nazwa twojego wydarzenia</string>
-    <string name="new_activity_importance">Poziom ważności: </string>
-    <string name="placeholder">placeholder</string>
-</resources>

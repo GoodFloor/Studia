@@ -1,0 +1,26 @@
+Visiting node 1
+Visiting node 6
+Visiting node 11
+Visiting node 16
+Visiting node 21
+Visiting node 22
+Visiting node 23
+Visiting node 24
+Visiting node 25
+Visiting node 17
+Visiting node 18
+Visiting node 19
+Visiting node 20
+Visiting node 12
+Visiting node 13
+Visiting node 14
+Visiting node 15
+Visiting node 7
+Visiting node 8
+Visiting node 9
+Visiting node 10
+Visiting node 2
+Visiting node 3
+Visiting node 4
+Visiting node 5
+Czas wykonywania: 0 minut 0.000218 sekund

@@ -1,0 +1,2 @@
+|V|	średnia waga	minimalna waga
+662	10862.3	10337

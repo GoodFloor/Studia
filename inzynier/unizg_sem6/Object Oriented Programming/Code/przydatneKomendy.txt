@@ -1,0 +1,12 @@
+javac -d bin -sourcepath src src/hr/fer/oop/simple/Calculator.java	//"-sourcepath src" pozwala na importowanie plików z folderu src w programie Calculator.java
+
+java -cp bin hr.fer.oop.simple.Calculator	//"-cp bin" oznacza że struktura pakietu jest w folderze bin
+
+javadoc -sourcepath src hr.fer.oop.util -d docs		//Tworzy dokumentację
+
+
+Eclipse:
+File->New->JavaProject->Niezaznaczone okienko "create module-info.java"
+Project->BuildAutomatically 
+Run->Run = Ctrl+F11
+Ctrl+1 = QuickFix

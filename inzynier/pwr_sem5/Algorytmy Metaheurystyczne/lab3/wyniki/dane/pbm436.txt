@@ -1,0 +1,2 @@
+|V|	średnia waga	minimalna waga
+436	8196.4	6320

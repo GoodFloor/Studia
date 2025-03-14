@@ -1,0 +1,41 @@
+<%- include(`partials/_head`); %>
+<%- include(`partials/_header`); %>
+
+<aside>
+    <div>
+        <nav>
+            <ul id="menuCategories">
+                <% locals.categoriesNames.forEach(element => { %>
+                    <li class="<%= element.name == locals.currentCategoryName ? "disabled" : "" %>"><a href="/getProducts/<%= element.id %>"><%= element.name %></a></li>
+                <% }); %>
+            </ul>
+        </nav>
+        <div class="links">
+            <a href="">Contact</a>
+            <a href="">Subscribe to newsletter</a>
+        </div>
+    </div>
+</aside>
+<main>
+    <div class="banner">
+        <h2>Welcome to my shop!</h2>
+        <img src="/images/banner.jpg" alt="Banner">
+    </div>
+    <div id="productsList">
+        <% let i = 0; 
+        locals.availableProducts.forEach(element => { %>
+            <div class="item" id="item<%= i %>">
+                <figure>
+                    <img src="/images/<%= element.image %>" class="itemImage">
+                    <a href="/addToCart/<%= element.id %>" id="cart<%= i++ %>" class="hidden"><img src="/images/cart.png" alt="add to cart"></a>
+                    <div class="<%= element.amount > 0 ? "amount" : "hidden" %>"><%= element.amount %></div>
+                </figure>
+                <p class="itemName"><%= element.name %></p>
+                <p class="itemCategory"><%= locals.currentCategoryName %></p>
+            </div>
+        <% }); %>
+    </div>
+</main>
+<script src="/scripts/itemAnimation.js"></script>
+
+<%- include(`partials/_footer`); %>

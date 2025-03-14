@@ -1,0 +1,2 @@
+
+bool palindrom(char napis[]);

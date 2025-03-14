@@ -1,1 +1,0 @@
-void drukujWynik(int* tab);

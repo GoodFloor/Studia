@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal shop</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <script src="scripts/data.js"></script>
+    <script src="scripts/cartHandler.js"></script>
+    <script src="scripts/cartCounter.js"></script>
+    <script src="scripts/cartPage.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <figure class="logo">
+                <a href="/"><img id="logotype" alt="logotype" src="images/logotype.png"></a>
+            </figure>
+            <h1 id="currentCategoryName">Category</h1>
+            <div class="toolbox">
+                <figure class="cart">
+                    <a href="cart.html"><img src="images/cart.png" alt="Cart"></a>
+                    <div id="cartCounter">0</div>
+                </figure>
+                <figure class="search">
+                    <a href=""><img src="images/loupe.png" alt="Search"></a> 
+                </figure>
+            </div>
+        </header>
+        <main>
+            <div class="banner">
+                <h2>Welcome to my shop!</h2>
+                <img src="images/banner.jpg" alt="Banner">
+            </div>
+            <div id="productsList">
+                <div class="cartContent">
+                    <p class="productName header">Product name</p>
+                    <p class="amountHeader header">Amount</p>
+
+                    <p class="productName">Nazwa 1</p>
+                    <button class="decrease">-</button>
+                    <p class="amount">5</p>
+                    <button class="increase">+</button>
+
+                    <p class="productName">Nazwa 2</p>
+                    <button class="decrease">-</button>
+                    <p class="amount">6</p>
+                    <button class="increase">+</button>
+
+                    <p class="productName">Nazwa 3</p>
+                    <button class="decrease">-</button>
+                    <p class="amount">7</p>
+                    <button class="increase">+</button>
+                </div>
+                No products in your cart yet!
+            </div>
+        </main>
+    </div>
+</body>
+</html>
